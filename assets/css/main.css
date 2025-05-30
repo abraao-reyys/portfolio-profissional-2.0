@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'font-base';
+    src: url(../fonts/Merriweather.ttf);
+}
+
+:root {
+    /* colors */
+
+    --principal: #1a1a1a;
+    --background: #f5f5f5;
+    --comp: #f0f0f0;
+
+    --border-1: rgb(26, 26, 26, 0.2);
+    --border-2: rgb(26, 26, 26, 0.5);
+
+    --text: #1a1a1a;
+    --text-light: rgb(26, 26, 26, 0.7);
+    --placeholder: rgb(26, 26, 26, 0.5);
+
+    /* fonts */
+
+    --font-md: 16px;
+    --font-lg: 20px;
+    --font-xl: 24px;
+    --font-xxl: 32px;
+
+    /* spacings */
+
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 40px;
+    --space-xxl: 48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'font-base';
+    scroll-behavior: smooth;
+}
+
+.button-filled {
+    color: var(--background);
+
+    height: 56px;
+    width: 256px;
+
+    font-size: var(--font-lg);
+
+    background-color: var(--principal);
+
+    border: 0;
+    border-radius: 10px;
+
+    a {
+        color: var(--background) !important;
+    }
+
+    cursor: pointer;
+}
+
+.button-hollow {
+    color: var(--background);
+
+    height: 56px;
+    width: 256px;
+
+    color: var(--principal);
+    font-size: var(--font-lg);
+
+    background-color: var(--background);
+
+    border: 1px solid var(--principal);
+    border-radius: 10px;
+
+    a {
+        color: var(--principal) !important;
+    }
+
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--principal);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--border-2);
+}
