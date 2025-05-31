@@ -112,4 +112,12 @@ form {
         outline: 1px solid var(--principal);
     }
 }
+
+@media screen and (min-width: 400px) and (max-width: 1100px) {
+    form {
+        .form-row:nth-of-type(1) {
+            flex-direction: column !important;
+        }
+    }
+}
 </style>

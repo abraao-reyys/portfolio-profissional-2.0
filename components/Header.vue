@@ -142,4 +142,42 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 400px) and (max-width: 1100px) {
+    header {
+        padding: 32px;
+
+        .title-header {
+            font-size: 16px !important;
+            line-height: 24px !important;
+        }
+
+        .subtitle-header {
+            font-size: 16px !important;
+            line-height: 24px !important;
+        }
+
+        ul {
+            flex-direction: column;
+            gap: 0 !important;
+        }
+
+        ul > li:last-of-type {
+            display: none;
+        }
+
+        .page-nav-link {
+            font-size: 16px !important;
+            width: 100px !important;
+        }
+
+        .nav-link-highlight {
+            width: 90px !important;
+        }
+
+        nav {
+            padding-left: 48px;
+        }
+    }
+}
 </style>

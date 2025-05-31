@@ -118,7 +118,7 @@ const copyText = (text) => {
                         <p><small>"Enquanto houver vontade de lutar haverá esperança de vencer." — Sto. Agostinho</small></p>
                     </div>
                     <div class="action-buttons">
-                        <button class="button-filled">Baixar currículo</button>
+                        <button class="button-filled" id="downloadCv">Baixar currículo</button>
                         <div class="network-buttons-container">
                             <a href="#">
                                 <div class="network-button">
@@ -228,19 +228,6 @@ const copyText = (text) => {
             <h2>Habilidades</h2>
             <div class="skills-columns">
                 <div class="skill-column">
-                    <div class="skills-type">Idiomas</div>
-                    <div class="skill-cards">
-                        <SkillCard v-for="skill in idiomSkills">
-                            <template #cardTitle>
-                                {{ skill.title }}
-                            </template>
-                            <template #cardPercent>
-                                {{ skill.percent }}
-                            </template>
-                        </SkillCard>
-                    </div>
-                </div>
-                <div class="skill-column">
                     <div class="skills-type">Softwares</div>
                     <div class="skill-cards">
                         <SkillCard v-for="skill in softwareSkills">
@@ -257,6 +244,19 @@ const copyText = (text) => {
                     <div class="skills-type">Código</div>
                     <div class="skill-cards">
                         <SkillCard v-for="skill in codeSkills">
+                            <template #cardTitle>
+                                {{ skill.title }}
+                            </template>
+                            <template #cardPercent>
+                                {{ skill.percent }}
+                            </template>
+                        </SkillCard>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <div class="skills-type">Idiomas</div>
+                    <div class="skill-cards">
+                        <SkillCard v-for="skill in idiomSkills">
                             <template #cardTitle>
                                 {{ skill.title }}
                             </template>
@@ -352,13 +352,20 @@ main {
 
         .section-container {
             display: flex;
+            flex-flow: row wrap-reverse;
+            justify-content: center;
             align-items: center;
-            gap: 200px;
+            gap: 40px;
+
+            width: 100%;
 
             .section-history-content {
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
+
+                max-width: 920px;
+                width: 100%;
 
                 .history-description {
                     display: flex;
@@ -410,7 +417,8 @@ main {
     section#education {
         .education-cards {
             display: flex;
-            justify-content: space-between;
+            flex-flow: row wrap;
+            justify-content: center;
             gap: 56px;
         }
     }
@@ -427,7 +435,9 @@ main {
     section#skills {
         .skills-columns {
             display: flex;
-            justify-content: space-between;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 80px;
 
             width: 100%;
 
@@ -468,6 +478,7 @@ main {
                 color: var(--text-light);
                 font-size: var(--font-lg);
                 font-weight: 300;
+                text-align: center;
             }
         }
 
@@ -481,8 +492,9 @@ main {
 
             .infos-container {
                 display: flex;
-                justify-content: space-between;
-                gap: 128px;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 64px;
 
                 width: 100%;
 
@@ -492,7 +504,7 @@ main {
                     align-items: center;
                     gap: var(--space-sm);
 
-                    width: 100%;
+                    width: 354px;
 
                     .info-content {
                         display: flex;
@@ -507,6 +519,7 @@ main {
                         .info-description {
                             color: var(--text-light);
                             font-size: var(--font-lg);
+                            text-align: center;
                         }
                     }
                 }
@@ -552,6 +565,36 @@ main {
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1100px) {
+    main {
+        padding: 0 24px;
+    }
+
+    #aboutMe {
+        .section-history-content {
+            align-items: center;
+        }
+    }
+
+    #downloadCv {
+        display: none;
+    }
+
+    iframe {
+        width: 490px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    #aboutMe {
+        padding: 0 !important;
+    }
+
+    iframe {
+        width: 350px;
     }
 }
 </style>

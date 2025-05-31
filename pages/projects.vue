@@ -78,12 +78,18 @@ main {
     .project-cards-container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-        gap: 56px 0;
+        justify-content: center;
+        gap: 80px;
 
         height: 100%;
         max-width: 1256px;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    main {
+        padding: 48px;
     }
 }
 </style>

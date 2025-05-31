@@ -5,7 +5,10 @@ export default defineNuxtConfig({
   pages: true,
   app: {
     head: {
-      title: 'Abraão Reis - Portfólio Profissional'
+      title: 'Abraão Reis - Personal Resume',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      ]
     }
   },
   css: [

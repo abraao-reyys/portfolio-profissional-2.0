@@ -21,7 +21,7 @@
     justify-content: space-between;
     gap: 8px;
 
-    width: 100%;
+    width: 368px;
 
     padding: 16px;
 
@@ -33,7 +33,6 @@
         align-items: center;
 
         font-size: var(--font-xl);
-        height: 32px;
         font-weight: 700;
     }
 
