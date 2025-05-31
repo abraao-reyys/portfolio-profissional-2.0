@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 
 function scrollToTop() {
-  const content = document.querySelector('.page-content');
+  const content = document.querySelector('.main-content');
   if (content) {
     content.scrollTo({ top: 0, behavior: 'smooth' });
   }
