@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import myImg from '~/assets/images/photo-myself.png';
+import myImg from '/assets/images/photo-myself.png';
 
 const rawIdiomSkills = [
     {

@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   ssr: true,
   pages: true,
   app: {
+    baseURL: '/portfolio-profissional-2.0/',
     head: {
       title: 'Abraão Reis - Personal Resume',
       link: [
@@ -13,7 +14,6 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'static',
     prerender: {
       routes: ['/', '/projects']
     }
