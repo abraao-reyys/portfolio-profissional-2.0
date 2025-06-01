@@ -55,6 +55,62 @@ const projectsInfos = [
         urlImg: '/assets/images/project-gamezone.jpg',
         urlRepo: 'https://github.com/marcos-grocha/game-zone',
         urlDeploy: 'https://marcos-grocha.github.io/game-zone/'
+    },
+    {
+        title: 'Projeto - Calculadora',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-calculadora.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/Calculadora/index.html'
+    },
+    {
+        title: 'Projeto - BankSE',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-bankse.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/BankSE/index.html'
+    },
+    {
+        title: 'Projeto - Quiz Esporte',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-esporte.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/Quiz%20de%20esporte/index.html'
+    },
+    {
+        title: 'Projeto - Jogo da Memória',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-jogodamemoria.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/Jogo%20da%20mem%C3%B3ria/index.html'
+    },
+    {
+        title: 'Projeto - Número Oculto',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-jogodonumerooculto.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/Jogo%20n%C3%BAmero%20oculto/index.html'
+    },
+    {
+        title: 'Projeto - Kanban Board',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-kanban.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/Kanban/index.html'
+    },
+    {
+        title: 'Projeto - Lâmpada On/Off',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-lampada.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/L%C3%A2mpada/index.html'
+    },
+    {
+        title: 'Projeto - Corrida',
+        description: 'Mini projeto idealizado na disciplina de Web Front-End da Universidade Tiardentes - Unit; curso de Sistemas de Informação.',
+        urlImg: '/assets/images/project-selecionarumcarro.png',
+        urlRepo: 'https://github.com/abraao-reyys/disciplina-webfrontend-unit',
+        urlDeploy: 'https://abraao-reyys.github.io/disciplina-webfrontend-unit/Selecione%20um%20carro/index.html'
     }
 ];
 </script>
