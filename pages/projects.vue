@@ -5,7 +5,7 @@ const projectsInfos = [
         description: 'Esta é uma nova versão de portfólio; UI/UX aprimorada e utilização de novas tecnologias aprendidas.',
         urlImg: '/assets/images/project-portfolio2.jpg',
         urlRepo: 'https://github.com/abraao-reyys/portfolio-profissional-2.0',
-        urlDeploy: 'https://abraao-reyys.github.io/portfolio-profissional-2.0/'
+        urlDeploy: 'https://portfolio-profissional-2.netlify.app/'
     },
     {
         title: 'Portfólio Profissional 1.0',
