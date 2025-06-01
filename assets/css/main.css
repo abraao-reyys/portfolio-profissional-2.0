@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'font-base';
-    src: url(../fonts/Merriweather.ttf);
+    src: url(/assets/fonts/Merriweather.ttf);
 }
 
 :root {
