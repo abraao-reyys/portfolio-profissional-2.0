@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   ssr: true,
   pages: true,
   app: {
-    baseURL: '/portfolio-profissional-2.0/',
     head: {
       title: 'Abraão Reis - Personal Resume',
       link: [

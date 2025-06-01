@@ -20,7 +20,6 @@
     flex-direction: column;
     gap: var(--space-xs);
 
-    height: 104px;
     width: 100%;
     max-width: 424px;
 
