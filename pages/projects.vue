@@ -2,56 +2,56 @@
 const projectsInfos = [
     {
         title: 'Portfólio Profissional 2.0',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Esta é uma nova versão de portfólio; UI/UX aprimorada e utilização de novas tecnologias aprendidas.',
         urlImg: '/assets/images/project-portfolio2.jpg',
-        urlRepo: '',
+        urlRepo: 'https://github.com/abraao-reyys/portfolio-profissional-2.0',
         urlDeploy: 'https://abraao-reyys.github.io/portfolio-profissional-2.0/'
     },
     {
         title: 'Portfólio Profissional 1.0',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Este é o meu primeiro projeto feito após dar início aos estudos de JavaScript.',
         urlImg: '/assets/images/project-portfolio1.jpg',
         urlRepo: 'https://github.com/abraao-reyys/portfolio-profissional',
         urlDeploy: 'https://abraao-reyys.github.io/portfolio-profissional'
     },
     {
         title: 'Blog Android',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Criado como desafio através do CursoemVideo com o objetivo de pôr em prática as habilidades em CSS.',
         urlImg: '/assets/images/project-blogandroid.jpg',
         urlRepo: 'https://github.com/abraao-reyys/projeto-android',
         urlDeploy: 'https://abraao-reyys.github.io/projeto-android/'
     },
     {
         title: 'Tela de Login',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Criado ao final do módulo de formulários HTML do CursoemVideo para testar habilidades, inclusive em CSS.',
         urlImg: '/assets/images/project-teladelogin.jpg',
         urlRepo: 'https://github.com/abraao-reyys/projeto-login',
         urlDeploy: 'https://abraao-reyys.github.io/projeto-login/'
     },
     {
         title: 'Landing Page - One Piece',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Este foi o meu primeiro projeto quando iniciei os estudos em web front-end. Idealizado pelo DevEmDobro.',
         urlImg: '/assets/images/project-onepiece.jpg',
         urlRepo: 'https://github.com/abraao-reyys/projeto-one-piece',
         urlDeploy: 'https://abraao-reyys.github.io/projeto-one-piece/'
     },
     {
         title: 'Cordel Moderno',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Criado como desafio através do CursoemVideo com o objetivo de elaborar um Efeito Parallax.',
         urlImg: '/assets/images/project-cordel.jpg',
         urlRepo: 'https://github.com/abraao-reyys/projeto-cordel',
         urlDeploy: 'https://abraao-reyys.github.io/projeto-cordel/'
     },
     {
         title: 'Simulador de Smartphone',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Criado ao final do módulo de iFrames HTML do CursoemVideo. Além dos iFrames, pratiquei posicionamento com CSS.',
         urlImg: '/assets/images/project-smartphone.jpg',
         urlRepo: 'https://github.com/abraao-reyys/projeto-social-media',
         urlDeploy: 'https://abraao-reyys.github.io/projeto-social-media/'
     },
     {
         title: 'Landing Page - GameZone',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, repudiandae.',
+        description: 'Projeto idealizado na disciplina de Web Front-End e feito em colaboração com Marcos Grocha. Segue o repositório.',
         urlImg: '/assets/images/project-gamezone.jpg',
         urlRepo: 'https://github.com/marcos-grocha/game-zone',
         urlDeploy: 'https://marcos-grocha.github.io/game-zone/'

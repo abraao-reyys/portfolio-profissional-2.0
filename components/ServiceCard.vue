@@ -19,7 +19,10 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
+
     height: 104px;
+    width: 100%;
+    max-width: 424px;
 
     .card-title {
         display: flex;
@@ -31,6 +34,8 @@
     }
 
     .card-description {
+        text-align: justify;
+        
         color: var(--text-light);
     }
 }

@@ -22,7 +22,7 @@
     gap: 8px;
 
     width: 100%;
-    max-width: 368px;
+    max-width: 400px;
 
     padding: 16px;
 

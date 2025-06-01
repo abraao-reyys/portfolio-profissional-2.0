@@ -88,6 +88,11 @@
     cursor: pointer;
 }
 
+.button-filled:hover, .button-hollow:hover {
+  font-weight: 700;
+  transition: font-weight 0.2s ease;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }

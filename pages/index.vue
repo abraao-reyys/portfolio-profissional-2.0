@@ -147,9 +147,9 @@ onBeforeUnmount(() => {
                 <div class="section-history-content">
                     <h2>Por trás do código</h2>
                     <div class="history-description">
-                        <p>Apaixonado por tecnologia e estudos, comecei a aprofundar-me no mundo da programação em 2021, quando ainda estava no ensino médio. Hoje, curso Sistemas de Informação na UNIT, onde estou ativamente presente em eventos, hackathons e em outras oportunidades de se obter conhecimento.</p>
-                        <p>Mais do que simples conceitos, a fundação de um conhecimento é extremamente importante para os próximo passos. Com essa certeza, elaborei este portfólio com as tecnologias base de websites.</p>
-                        <p>Hobbies? Leio técnicos e clássicos, toco alguns instrumentos, corro, sou católico ativo, estudo idiomas e busco sempre aprender novas coisas.</p>
+                        <p>Apaixonado por tecnologia e aprendizado constante, iniciei minha jornada na programação em 2021, ainda durante o ensino médio. Desde então, venho me aprofundando na área com entusiasmo e disciplina. Atualmente curso Sistemas de Informação na UNIT, onde participo ativamente de eventos, hackathons e iniciativas que me desafiem a crescer e ampliar meu conhecimento.</p>
+                        <p>Acredito que mais do que dominar ferramentas, é essencial construir uma base sólida de fundamentos. Com essa mentalidade, desenvolvi esta segunda versão do meu portfólio — uma evolução da primeira — atualizada com as tecnologias que venho estudando e aplicando no momento, voltado à criação de websites com boas práticas e estrutura moderna.</p>
+                        <p>Fora do código, me dedico a uma vida rica em experiências: leio livros técnicos e clássicos, toco instrumentos musicais, pratico corrida, sou católico ativo, estudo idiomas e estou sempre em busca de novos aprendizados. Sonho alto, planejo com propósito e sigo determinado a conquistar cada passo com esforço e paixão.</p>
                         <p><small>"Enquanto houver vontade de lutar haverá esperança de vencer." — Sto. Agostinho</small></p>
                     </div>
                     <div class="action-buttons">
@@ -195,7 +195,7 @@ onBeforeUnmount(() => {
                         Ago 2024 - Jun 2028
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error natus aliquid amet obcaecati iusto consequuntur inventore expedita doloribus.
+                        Na universidade, desenvolvo habilidades de fullstack, infraestrutura, engenharia de requisitos, fundamentos da programação e participo ativamente de hackathons.
                     </template>
                 </EducationCard>
                 <EducationCard>
@@ -206,18 +206,18 @@ onBeforeUnmount(() => {
                         Dez 2024 - Fev 2025
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error natus aliquid amet obcaecati iusto consequuntur inventore expedita doloribus.
+                        Foco em JavaScript moderno, com aprofundamento em Node.js, Express, Vue e recursos avançados do ESNext para aplicações web.
                     </template>
                 </EducationCard>
                 <EducationCard>
                     <template #cardTitle>
-                        Sistemas de Informação - UNIT
+                        Curso em Vídeo - CEV
                     </template>
                     <template #cardSubtitle>
-                        Jan 2024 - Jan 2025
+                        Jun 2023 - Dez 2024
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error natus aliquid amet obcaecati iusto consequuntur inventore expedita doloribus.
+                        Ao longo do tempo, conclui diversos cursos na plataforma, explorando HTML5, CSS3, JavaScript, lógica de programação, Python e outros áreas essenciais.
                     </template>
                 </EducationCard>
             </div>
@@ -230,7 +230,7 @@ onBeforeUnmount(() => {
                         Desenvolvimento Front-End
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Criação de interfaces web com Vue, Nuxt e TypeScript, focando em interatividade e robustez.
                     </template>
                 </ServiceCard>
                 <ServiceCard>
@@ -238,7 +238,7 @@ onBeforeUnmount(() => {
                         Desenvolvimento Back-End
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Iniciando no backend com Node e Express, realizo requisições e testes utilizando o Postman.
                     </template>
                 </ServiceCard>
                 <ServiceCard>
@@ -246,7 +246,7 @@ onBeforeUnmount(() => {
                         Engenharia de Requisitos
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Atuo na modelagem de requisitos por meio de casos de uso, diagramas UML e na elaboração estruturada de documentos de especificação de sistemas.
                     </template>
                 </ServiceCard>
                 <ServiceCard>
@@ -254,7 +254,7 @@ onBeforeUnmount(() => {
                         Gestão de Processos
                     </template>
                     <template #cardDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Gestão ágil com liderança estratégica, aplicando técnicas criativas e inovadoras para desenvolver soluções eficientes.
                     </template>
                 </ServiceCard>
             </div>
@@ -394,7 +394,7 @@ main {
             flex-flow: row wrap-reverse;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 40px 64px;
 
             width: 100%;
 
@@ -433,7 +433,7 @@ main {
                             border: 1px solid var(--principal);
                             border-radius: 30px;
                         }
-
+                        
                         .network-button:hover {
                             border: 2px solid var(--principal);
                         }
