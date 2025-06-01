@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+  ssr: true,
   pages: true,
   app: {
     head: {
@@ -11,7 +12,14 @@ export default defineNuxtConfig({
       ]
     }
   },
+  nitro: {
+    preset: 'static',
+    prerender: {
+      routes: ['/', '/projects']
+    }
+  },
   css: [
     '~/assets/css/main.css'
-  ]
+  ],
+  components: true
 })

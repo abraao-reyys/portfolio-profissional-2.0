@@ -1,4 +1,7 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import myImg from '~/assets/images/photo-myself.png';
+
 const rawIdiomSkills = [
     {
         title: 'Português',
@@ -72,7 +75,7 @@ const rawCodeSkills = [
     },
     {
         title: 'Vue/Nuxt',
-        percent: '60%'
+        percent: '70%'
     },
     {
         title: 'Express',
@@ -102,7 +105,39 @@ const copyText = (text) => {
     .catch(err => {
       alert("Falha ao copiar texto: " + err);
     });
+};
+
+const mapWidth = ref('760');
+const mapHeight = ref('456');
+
+function updateMap() {
+  const width = window.innerWidth;
+
+  if (width >= 790 && width < 960) {
+    mapWidth.value = '600';
+    mapHeight.value = '400';
+} else if (width > 480 && width < 790) {
+    mapWidth.value = '400';
+    mapHeight.value = '400';
+} else if (width > 380 && width <= 480) {
+    mapWidth.value = '300'
+    mapHeight.value = '400'
+} else if (width <= 380) {
+    mapWidth.value = '250'
+} else {
+    mapWidth.value = '760';
+    mapHeight.value = '456';
+    }
 }
+
+onMounted(() => {
+  updateMap();
+  window.addEventListener('resize', updateMap);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateMap);
+});
 </script>
 
 <template>
@@ -118,23 +153,23 @@ const copyText = (text) => {
                         <p><small>"Enquanto houver vontade de lutar haverá esperança de vencer." — Sto. Agostinho</small></p>
                     </div>
                     <div class="action-buttons">
-                        <button class="button-filled" id="downloadCv">Baixar currículo</button>
+                        <a href="/assets/documents/abraaoreis-cv.pdf" download class="button-filled">Baixar currículo</a>
                         <div class="network-buttons-container">
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/abraaoreis/" target="_blank">
                                 <div class="network-button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                                         <path fill="#1A1A1A" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" stroke-width="1" stroke="#1A1A1A" />
                                     </svg>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href="https://github.com/abraao-reyys" target="_blank">
                                 <div class="network-button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                                         <path fill="#1A1A1A" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" stroke-width="1" stroke="#1A1A1A" />
                                     </svg>
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href="mailto:abraaoreispersonal@gmail.com">
                                 <div class="network-button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                                         <path fill="#1A1A1A" d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM12 12.116L4 6.885v10.5q0 .269.173.442t.443.173h14.769q.269 0 .442-.173t.173-.443v-10.5zM12 11l7.692-5H4.308zM4 6.885V6v11.385q0 .269.173.442t.443.173H4z" stroke-width="1" stroke="#1A1A1A" />
@@ -145,7 +180,7 @@ const copyText = (text) => {
                     </div>
                 </div>
                 <div class="section-history-image">
-                    <img src="../assets/images/photo-myself.png" alt="Minha Foto">
+                    <img :src="myImg" alt="Minha Foto">
                 </div>
             </div>
         </section>
@@ -312,7 +347,7 @@ const copyText = (text) => {
                     </div>
                 </div>
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125325.97311428112!2d-37.18379433485042!3d-11.005828234731723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab04015be27cd%3A0x804434fd92ec3b36!2sAracaju%2C%20SE!5e0!3m2!1spt-BR!2sbr!4v1748620585785!5m2!1spt-BR!2sbr" width="800" height="456" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125325.97311428112!2d-37.18379433485042!3d-11.005828234731723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab04015be27cd%3A0x804434fd92ec3b36!2sAracaju%2C%20SE!5e0!3m2!1spt-BR!2sbr!4v1748620585785!5m2!1spt-BR!2sbr" :width="mapWidth" :height="mapHeight" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="form-container">
                     <div class="form-header">
@@ -345,6 +380,10 @@ main {
     p {
         color: var(--text-light);
         font-size: var(--font-lg);
+    }
+
+    a {
+        text-decoration: none;
     }
 
     section#aboutMe {
@@ -445,6 +484,9 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: var(--space-lg);
+
+                max-width: 400px;
+                width: 100%;
             }
 
             .skill-cards {
@@ -552,6 +594,7 @@ main {
                         color: var(--text-light);
                         font-size: var(--font-lg);
                         font-weight: 300;
+                        text-align: center;
 
                         .highlight {
                             font-weight: 700;
@@ -568,33 +611,149 @@ main {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1100px) {
+@media screen and (max-width: 1199px) {
     main {
-        padding: 0 24px;
-    }
-
-    #aboutMe {
-        .section-history-content {
-            align-items: center;
-        }
-    }
-
-    #downloadCv {
-        display: none;
-    }
-
-    iframe {
-        width: 490px;
+        padding: 0 80px;
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 500px) {
-    #aboutMe {
-        padding: 0 !important;
-    }
+@media screen and (max-width: 759px) {
+    main {
+        padding: 0 32px;
 
-    iframe {
-        width: 350px;
+        #aboutMe {
+            padding: 80px 32px !important;
+
+            a.button-filled {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    main {
+        h2 {
+            font-size: var(--font-xxl);
+        }
+
+        #aboutMe {
+            padding: 56px 32px !important;
+
+            img {
+                width: 300px;
+            }
+
+            p {
+                font-size: var(--font-md);
+            }
+
+            a.button-filled {
+                width: 152px;
+                font-size: var(--font-md) !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    main {
+        h2 {
+            font-size: var(--font-xl);
+        }
+
+        #aboutMe {
+            img {
+                width: 220px !important;
+            }
+    
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+    
+                .network-buttons-container {
+                    justify-content: space-evenly;
+    
+                    width: 100%;
+                }
+            }
+        }
+
+        section#skills {
+            .skills-columns {
+                gap: 64px;
+            }
+            .skills-type {
+                font-size: var(--font-lg) !important;
+            }
+        }
+
+        section#contact {
+            gap: 64px;
+
+            .section-header {
+                .section-subtitle {
+                    font-size: var(--font-md);
+                }
+            }
+
+            .section-content {
+                .infos-container {
+                    gap: 40px;
+
+                    .info-contact {
+                        .info-icon {
+                            height: 48px;
+                            width: 48px;
+                            
+                            svg {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        .info-content {
+                            .info-title {
+                                font-size: var(--font-lg);
+                            }
+
+                            .info-description {
+                                font-size: var(--font-md);
+                            }
+                        }
+                    }
+                }
+
+                .form-container {
+                    .form-header {
+                        .form-header-title {
+                            font-size: var(--font-lg);
+                        }
+
+                        .form-header-subtitle {
+                            font-size: var(--font-md);
+                        }
+                    }
+                }
+            }
+        }
+    
+        .standard-section {
+            padding: 56px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    main {
+        #aboutMe {
+            padding: 40px 0 !important;
+        }
+
+        section#skills {
+            gap: 40px;
+        }
     }
 }
 </style>

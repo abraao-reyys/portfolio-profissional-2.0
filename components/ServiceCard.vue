@@ -34,4 +34,12 @@
         color: var(--text-light);
     }
 }
+
+@media screen and (max-width: 520px) {
+    .card-container {
+        .card-title {
+            font-size: var(--font-lg);
+        }
+    }
+}
 </style>

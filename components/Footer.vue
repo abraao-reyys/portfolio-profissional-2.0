@@ -16,6 +16,13 @@ footer {
     width: 100%;
 
     color: var(--background);
+    text-align: center;
     background-color: var(--principal);
+}
+
+@media screen and (max-width: 959px) {
+    footer {
+        font-size: 14px;
+    }
 }
 </style>

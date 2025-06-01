@@ -11,4 +11,10 @@
 
     background-color: var(--comp);
 }
+
+@media screen and (max-width: 599px) {
+    .divider-header {
+        height: 16px;
+    }
+}
 </style>

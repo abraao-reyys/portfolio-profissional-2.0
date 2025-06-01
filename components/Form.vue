@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+function clearForm(e) {
+  e.preventDefault();
+  const form = document.querySelector('form');
+  form.reset();
+}
+</script>
 
 <template>
     <form action="https://formspree.io/f/xwpvkwll" method="post">
@@ -23,7 +29,7 @@
             </div>
         </div>
         <div class="form-row">
-            <button class="button-hollow" @click.prevent>Limpar</button>
+            <button class="button-hollow" @click.prevent="clearForm">Limpar</button>
             <button class="button-filled" type="submit">Enviar</button>
         </div>
     </form>
@@ -113,10 +119,39 @@ form {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     form {
         .form-row:nth-of-type(1) {
             flex-direction: column !important;
+        }
+    }
+}
+
+@media screen and (min-width: 520px) {
+    form {
+        .form-fields {
+            .input-field {
+                label {
+                    font-size: var(--font-md) !important;
+                }
+            }
+        }
+
+        .form-row:last-child {
+            button {
+                height: 48px;
+                
+                font-size: var(--font-md);
+            }
+        }
+
+        textarea, input, input::placeholder {
+            font-size: 14px !important;
+        }
+
+        input {
+            height: 56px !important;
+            padding: 8px 16px !important;
         }
     }
 }

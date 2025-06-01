@@ -21,7 +21,8 @@
     justify-content: space-between;
     gap: 8px;
 
-    width: 368px;
+    width: 100%;
+    max-width: 368px;
 
     padding: 16px;
 

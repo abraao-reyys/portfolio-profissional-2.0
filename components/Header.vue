@@ -143,40 +143,81 @@ header {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1100px) {
+@media screen and (max-width: 959px) {
     header {
-        padding: 32px;
-
-        .title-header {
-            font-size: 16px !important;
-            line-height: 24px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .title-container {
+            .title-header {
+                font-size: var(--font-xl) !important;
+            }
+            .subtitle-header {
+                text-align: center;
+                font-size: var(--font-lg) !important;
+            }
         }
+    }
 
-        .subtitle-header {
-            font-size: 16px !important;
-            line-height: 24px !important;
-        }
+    nav {
+        width: 100% !important;
 
         ul {
-            flex-direction: column;
-            gap: 0 !important;
-        }
+            .page-nav-link {
+                height: 40px !important;
+                font-size: var(--font-md) !important;
+            }
 
-        ul > li:last-of-type {
-            display: none;
+            .nav-link-highlight {
+                width: 88px !important;
+            }
         }
+    }
+}
 
-        .page-nav-link {
-            font-size: 16px !important;
-            width: 100px !important;
-        }
+@media screen and (max-width: 599px) {
+    header {
+        padding: 16px;
+    }
 
-        .nav-link-highlight {
-            width: 90px !important;
+    ul {
+        gap: var(--space-sm) !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        gap: var(--space-xs);
+        div.title-container {
+
+            div.title-header {
+                line-height: 40px;
+            }
+
+            div.subtitle-header {
+                line-height: 24px;
+            }
         }
+        nav {
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header {
+        padding: 8px;
 
         nav {
-            padding-left: 48px;
+            ul {
+                li.page-nav-link {
+                    font-size: 14px !important;
+                }
+                .nav-link-highlight {
+                    width: 64px !important;
+                }
+            }
         }
     }
 }

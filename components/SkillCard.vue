@@ -39,7 +39,8 @@ onMounted(() => {
     gap: var(--space-xs);
     
     height: 64px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 
     .card-header {
         display: flex;
@@ -71,6 +72,30 @@ onMounted(() => {
             background-color: var(--principal);
 
             border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .card-container {
+        height: 48px;
+
+        .card-header {
+            height: 24px;
+
+            .card-title {
+                font-size: var(--font-md);
+            }
+        }
+
+        .card-percent {
+            font-size: 14px;
+        }
+
+        .progress-track {
+            .progress-tumb {
+                height: 10px;
+            }
         }
     }
 }

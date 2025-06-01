@@ -47,4 +47,37 @@
 footer {
     flex-shrink: 0;
 }
+
+@media screen and (max-width: 959px) {
+  .fixed {
+    height: 264px;
+  }
+
+  .main-content {
+    height: calc(100vh - 264px);
+    margin-top: 264px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .fixed {
+    height: 208px;
+  }
+
+  .main-content {
+    height: calc(100vh - 208px);
+    margin-top: 208px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fixed {
+    height: 160px;
+  }
+
+  .main-content {
+    height: calc(100vh - 160px);
+    margin-top: 160px;
+  }
+}
 </style>
