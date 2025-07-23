@@ -1,14 +1,28 @@
 <script setup>
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
+const router = useRouter();
 
 function scrollToTop() {
-  const content = document.querySelector('.main-content');
-  if (content) {
-    content.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+    const content = document.querySelector('.main-content');
+    if (content) {
+        content.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 };
+
+
+function goToContact() {
+  if (route.path === '/') {
+    // Já está na home, scroll manual
+    const el = document.querySelector('#contact');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else {
+    router.push('/#contact');
+  }
+}
 </script>
 
 <template>
@@ -37,7 +51,9 @@ function scrollToTop() {
                         <div class="nav-link-highlight"></div>
                     </li>
                 </NuxtLink>
-                <li class="page-nav-link button-filled"><a href="#contact">Contato</a></li>
+                <li class="page-nav-link button-filled" @click="goToContact">
+                    Contato
+                </li>
             </ul>
         </nav>
     </header>

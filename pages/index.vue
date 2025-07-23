@@ -1,6 +1,7 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import myImg from '/assets/images/photo-myself.png';
+import { useRoute } from 'vue-router'
 
 const rawIdiomSkills = [
     {
@@ -91,6 +92,9 @@ const rawCodeSkills = [
     }
 ];
 
+
+const route = useRoute()
+
 const codeSkills = rawCodeSkills.slice().sort((a, b) => {
   const percentA = parseInt(a.percent.replace('%', ''))
   const percentB = parseInt(b.percent.replace('%', ''))
@@ -130,9 +134,17 @@ function updateMap() {
     }
 }
 
-onMounted(() => {
+onMounted(async () => {
   updateMap();
   window.addEventListener('resize', updateMap);
+
+  await nextTick();
+  if (route.hash === '#contact') {
+    const el = document.querySelector(route.hash);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 });
 
 onBeforeUnmount(() => {
@@ -218,6 +230,17 @@ onBeforeUnmount(() => {
                     </template>
                     <template #cardDescription>
                         Ao longo do tempo, conclui diversos cursos na plataforma, explorando HTML5, CSS3, JavaScript, lógica de programação, Python e outros áreas essenciais.
+                    </template>
+                </EducationCard>
+                <EducationCard>
+                    <template #cardTitle>
+                        Desenvolvimento com React - Udemy
+                    </template>
+                    <template #cardSubtitle>
+                        Jun 2025 - Em andamento
+                    </template>
+                    <template #cardDescription>
+                        Desenvolvimento web com React, Next, Nest, Tailwind, entre outras tecnologias, de forma integrada; além de criação e consumo de APIs.
                     </template>
                 </EducationCard>
             </div>
