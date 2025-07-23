@@ -1,10 +1,32 @@
-# Nuxt Minimal Starter
+![Favicon do Projeto](/public/favicon.ico)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Portfólio Profissional 2.0
 
-## Setup
+## Introduzindo
 
-Make sure to install dependencies:
+Mais do que simples conceitos, a fundação de um conhecimento é extremamente importante para os próximo passos. Este é o princípio que carrego antes da criação de qualquer projeto.
+
+Esta é a segunda versão do meu portfólio profissional; onde novas habilidades e tecnologias foram colocadas em prova para trazer uma interface melhor para o usuário.
+
+### Motivo
+
+Claramente, o objetivo principal foi a atualização de um portfólio rígido, com uma estrutura de difícil manutenção e aprimoramento.
+
+Este portfólio possibilitou-me pôr em prática as novas tecnologias aprendidas para que consolidasse o conhecimento em cada uma.
+
+## Tecnologias
+
+* Vue 3
+* Nuxt 3
+* TypeScript
+
+## Deploy
+
+[Clique aqui](https://portfolio-profissional-2.netlify.app/) para acessar.
+
+## Start Local
+
+Para visualizar o projeto em sua máquina, após clonar o projeto, faça a instalação das dependências:
 
 ```bash
 # npm
@@ -20,9 +42,7 @@ yarn install
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Dê start local com o modo de desenvolvimento, que é executado, por padrão, na porta 3000:
 
 ```bash
 # npm
@@ -38,38 +58,22 @@ yarn dev
 bun run dev
 ```
 
-## Production
+Confira a [documentação de deployment](https://nuxt.com/docs/getting-started/deployment) para mais detalhes.
 
-Build the application for production:
+Também é válido conhecer a [documentação do Nuxt](https://nuxt.com/docs/getting-started/introduction) para introduzir no uso do Nuxt.
 
-```bash
-# npm
-npm run build
+## Issues
 
-# pnpm
-pnpm build
+Sinta-se à vontade para registrar um novo problema no Portfólio Profissional 2.0. Se você já encontrou uma solução, adoraria revisar sua solicitação de pull!
 
-# yarn
-yarn build
+## Agradecimentos
 
-# bun
-bun run build
-```
+Agradeço, mais uma vez, ao meu amigo **[Nícolas Santos](https://www.linkedin.com/in/nícolas-santos-b1a534290/)**, UI/UX Designer, que está sempre colaborando com meus novos projetos. Aprendi e continuo aprendendo muito com ele.
 
-Locally preview production build:
+## Contato
 
-```bash
-# npm
-npm run preview
+[Gmail](mailto:abraaoreispersonal@gmail.com)
+//
+[LinkedIn](https://www.linkedin.com/in/abraaoreis/)
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+By: Abraão Andrade Reis
