@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 
 const rawIdiomSkills = [
     {
-        title: 'Português',
+        title: 'Português (nativo)',
         percent: '100%'
     },
     {
@@ -51,7 +51,11 @@ const rawSoftwareSkills = [
     },
     {
         title: 'Postman',
-        percent: '20%'
+        percent: '40%'
+    },
+    {
+        title: 'Docker',
+        percent: '15%'
     }
 ];
 
@@ -68,11 +72,11 @@ const rawCodeSkills = [
     },
     {
         title: 'JavaScript',
-        percent: '80%'
+        percent: '85%'
     },
     {
         title: 'Node',
-        percent: '70%'
+        percent: '80%'
     },
     {
         title: 'Vue/Nuxt',
@@ -80,15 +84,23 @@ const rawCodeSkills = [
     },
     {
         title: 'Express',
-        percent: '30%'
+        percent: '50%'
     },
     {
         title: 'TypeScript',
-        percent: '30%'
+        percent: '35%'
+    },
+    {
+        title: 'React (em foco)',
+        percent: '45%'
     },
     {
         title: 'Python',
         percent: '20%'
+    },
+    {
+        title: 'SQL',
+        percent: '30%'
     }
 ];
 
