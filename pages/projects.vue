@@ -15,6 +15,13 @@ const projectsInfos = [
         urlDeploy: 'https://abraao-reyys.github.io/portfolio-profissional'
     },
     {
+        title: 'Chronos Pomodoro',
+        description: 'Timer Pomodoro (SPA) com histórico, configuraçoes e roteamento em React, TypeScript e Vite.',
+        urlImg: '/assets/images/project-chronos-pomodoro.png',
+        urlRepo: 'https://github.com/abraao-reyys/chronos-pomodoro',
+        urlDeploy: 'https://chronos-timer.netlify.app/'
+    },
+    {
         title: 'BookFinder API',
         description: 'Combina uma API Node com Express e um frontend estático em HTML/JS para busca de livros.',
         urlImg: '/assets/images/project-bookfinder-api.png',
