@@ -80,7 +80,7 @@ const rawCodeSkills = [
     },
     {
         title: 'Vue/Nuxt',
-        percent: '70%'
+        percent: '65%'
     },
     {
         title: 'Express',
@@ -88,11 +88,11 @@ const rawCodeSkills = [
     },
     {
         title: 'TypeScript',
-        percent: '35%'
+        percent: '40%'
     },
     {
         title: 'React (em foco)',
-        percent: '45%'
+        percent: '55%'
     },
     {
         title: 'Python',
